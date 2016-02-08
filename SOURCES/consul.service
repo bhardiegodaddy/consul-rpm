@@ -10,7 +10,7 @@ Group=consul
 EnvironmentFile=-/etc/sysconfig/consul
 ExecStart=/usr/bin/consul $CMD_OPTS
 ExecReload=/bin/kill -HUP $MAINPID
-KillSignal=SIGINT
+KillSignal=SIGTERM
 
 [Install]
 WantedBy=multi-user.target
